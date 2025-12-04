@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+C:\Users\Sruthi  Sri\Downloads\TASKS\JAVA\4-11-25\Java_Task\.metadata\.plugins\org.eclipse.jdt.core
+677489365.index
+1865797976.index
+2599240549.index
