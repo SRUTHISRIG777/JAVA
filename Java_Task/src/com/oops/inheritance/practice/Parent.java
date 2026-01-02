@@ -5,6 +5,10 @@ public class Parent {
 	public void printData() {
 		System.out.println("this is parent class");
 	}
+//	public static void main(String[] args) {
+//		Parent ch=new Parent();
+//		((Child) ch).getData();//run time exception
+//	}
 
 
 }
