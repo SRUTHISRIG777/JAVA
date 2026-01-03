@@ -12,7 +12,7 @@ public class StudentService extends Student  {
 		if(dep.equals("IT")) {
 			
 			fee=fee-(fee*(discountPercent/100));
-			System.out.println(fee);
+			System.out.println("final payable fees: "+fee);
 			
 			
 		}

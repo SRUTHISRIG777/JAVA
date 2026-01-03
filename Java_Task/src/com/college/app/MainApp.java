@@ -23,6 +23,8 @@ public class MainApp {
 	  String coursename=sc.next();
 	  System.out.println("enter course fee: ");
 	  double fee=sc.nextDouble();
+	  System.out.println("enter discount:");
+	  int dis=sc.nextInt();
 	  
 	  Student s=new Student(id,dep,coursename);
 	  Person p=new Person(name,age,contact);
@@ -30,8 +32,8 @@ public class MainApp {
 	  StudentService st=new StudentService();
 	  s.displayStudentDetails(name, age, contact, id, dep, coursename);
 	  System.out.println("original fee: "+c.getCourseFee());
-	  System.out.print("discount applied: ");
-	  st.calculateDiscountFee(dep,fee, 25);
+	  System.out.println("discount applied: "+dis+"%");
+	  st.calculateDiscountFee(dep,fee, dis);
 	  
 	 
 	  
