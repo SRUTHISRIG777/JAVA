@@ -29,7 +29,7 @@ class ProjectEmployee extends Employee{
 		System.out.println("employee profile is created successfully");
 	}
 	public void updateProjectRole(String projectRole) {
-		if(projectRole==null||projectRole.equals("")) {
+		if(projectRole==null||projectRole.equals(" ")) {
 			System.out.println("please enter valid role");
 		}
 		else {
@@ -37,7 +37,7 @@ class ProjectEmployee extends Employee{
 		}
 	}
 	public void updateProjectName(String projectName) {
-		if(projectName==null||projectName.equals("")) {
+		if(projectName==null||projectName.equals(" ")) {
 			System.out.println("please enter valid project name");
 		}
 		else {
@@ -90,15 +90,16 @@ public class EmployeeManagement {
 			System.out.println("5.exit");
 			System.out.println("select any option");
 			int option=sc.nextInt();
+			sc.nextLine();
 			switch(option) {
 			case 1:
 				System.out.println("enter new role:");
-				String newRole=sc.next();
+				String newRole=sc.nextLine();
 				emp.updateProjectRole(newRole);
 				break;
 			case 2:
 				System.out.println("enter project name to update:");
-				String projectName=sc.next();
+				String projectName=sc.nextLine();
 				emp.updateProjectName(projectName);
 				break;
 			case 3:
