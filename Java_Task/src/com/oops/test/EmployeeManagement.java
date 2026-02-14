@@ -107,6 +107,13 @@ public class EmployeeManagement {
 				break;
 			case 4:
 				System.out.println(Arrays.toString(score));
+				
+				int sum=0;
+				for(int i:score) {
+					sum+=i;
+					
+				}
+				System.out.println("average performance:"+(sum/3));
 				break;
 			case 5:
 				System.out.println("thank you");
