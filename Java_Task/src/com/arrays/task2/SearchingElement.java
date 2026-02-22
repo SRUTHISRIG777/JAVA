@@ -1,8 +1,6 @@
 package com.arrays.task2;
-
 import java.util.Arrays;
 import java.util.Scanner;
-
 public class SearchingElement {
 	public static int findPosition(int[] arr,int index) {
 		for(int i=0;i<arr.length;i++) {
@@ -12,8 +10,7 @@ public class SearchingElement {
 		}
 		return 0;
 	}
-
-	public static void main(String[] args) {
+        public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
 		int[] arr=UtilityArray.getData();
 		System.out.println(Arrays.toString(arr));
@@ -25,7 +22,5 @@ public class SearchingElement {
 		else {
 			System.out.println("not founded");
 		}
-
-	}
-
-}
+		}
+  }

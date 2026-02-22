@@ -2,7 +2,7 @@ package com.arrays.task2;
 
 import java.util.Arrays;
 
-public class Two {
+public class EvenAndOddCount {
 
 	public static void main(String[] args) {
 		int[] arr=UtilityArray.getData();
