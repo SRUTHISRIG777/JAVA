@@ -11,12 +11,7 @@ class Student {
 	private int studentId;
 	private String studentName;
 	private int[] marks=new int[3];
-//	public Student(int studentId, String studentName, int[] marks) {
-//		super();
-//		this.studentId = studentId;
-//		this.studentName = studentName;
-//		this.marks = marks;
-//	}
+
 	public int getStudentId() {
 		return studentId;
 	}
@@ -49,11 +44,12 @@ class Student {
 		return calculateTotal()/marks.length;
 	}
 	public void displayStudentDetails() {
-		System.out.println("name: "+studentName);
-		System.out.println("id: "+studentId);
-		System.out.println("marks: "+Arrays.toString(marks));
-		System.out.println("total: "+calculateTotal());
+		System.out.println("student name: "+studentName);
+		System.out.println("student id: "+studentId);
+		System.out.println("student marks: "+Arrays.toString(marks));
+		System.out.println("total marks: "+calculateTotal());
 		System.out.println("average: "+calculateAverage());
+		
 		
 	}
 	
@@ -97,7 +93,7 @@ public class Test2 {
 				System.out.println("RESULT: FAIL");
 			}
 			System.out.println("grade: "+grades.apply(student.calculateAverage()));
-			System.out.println((check.checkEligibility(student.calculateAverage()))?"Eligibility: yes":"Eligibility: no");
+			System.out.println((check.checkEligibility(student.calculateAverage()))?"Eligibility: YES":"Eligibility: NO");
 			
 		};
 	
@@ -108,20 +104,16 @@ public class Test2 {
 			System.out.println("enter student"+(i+1)+" name:");
 			students[i].setStudentName(sc.next());
 			System.out.println("enter student"+(i+1)+ "marks:");
-			//int[] marks=new int[3];
+		
 			for(int j=0;j<3;j++) {
-				//students[i].setMarks(sc.nextInt());
 				int marks=sc.nextInt();
 				students[i].setMarks(j, marks);
-				
-			}
+				}
 		}
 		for(Student s:students) {
 			display.accept(s);
+			System.out.println();
 		}
-		
-			
-			
 		}
 		catch(InputMismatchException e) {
 			System.out.println("please enter correct type of data");
@@ -132,9 +124,6 @@ public class Test2 {
 		finally{
 			sc.close();
 		}
-			
-			
-			
 		}
 		}
 

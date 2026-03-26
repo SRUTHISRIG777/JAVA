@@ -15,15 +15,12 @@ class Handling{
 	}
 	public static void tilMethod(int num) {
 		try {
-//			int res=10/num;
-//			System.out.println("completed");
+
 			if(num==0) {
 				System.out.println(num/0);
 				throw new ArithmeticException();
 			}
-//			else if(num==10) {
-//				throw new ArithmeticException();
-//			}
+
 			else {
 				System.out.println("completed");
 			}
