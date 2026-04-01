@@ -17,7 +17,7 @@ class Printer{
 			else {
 				System.out.println(userName);
 				System.out.println(document);
-				System.out.println("paper is not available");
+				System.out.println("paper  is not available");
 				return;
 			}
 		
