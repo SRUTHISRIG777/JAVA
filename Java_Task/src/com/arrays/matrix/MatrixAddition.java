@@ -10,7 +10,7 @@ public class MatrixAddition {
 				result[i][j]=arr1[i][j]+arr2[i][j];
 			}
 		}
-		
+		System.out.println(Arrays.deepToString(result));
 		for(int i=0;i<result.length;i++) {
 			System.out.println(Arrays.toString(result[i]));
 		}

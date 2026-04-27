@@ -13,7 +13,7 @@ public class GCD {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		int num1=48,num2=18;
 		System.out.println(getGCD(num1,num2));
 		System.out.println(getLCM(num1,num2));

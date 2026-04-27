@@ -1,7 +1,12 @@
 package com.arrays.matrix2;
 
 import java.util.Arrays;
-
+/**
+ * m1*n1
+ * m2*n2
+ * m1==n2
+ * n1==m2
+ */
 public class MatrixMultiplication {
 	public static void getResult(int[][] nums1,int[][] nums2) {
 		int row1=nums1.length;

@@ -81,7 +81,7 @@ public class Transpose {
 		//matrixAddition(arr1,arr2);
 		//System.out.println(findLargest(arr1));
 		//rowSumAndColSum(arr1);
-		diagonalAndAntiDiagonal(arr1);
+		//diagonalAndAntiDiagonal(arr1);
 		
 		/**
 		 * 1 2
@@ -91,20 +91,20 @@ public class Transpose {
 		 * 2 4
 		 */
 	   // System.out.println(Arrays.toString(arr1));
-//		for(int i=0;i<arr1.length;i++) {
-//			for(int j=0;j<arr1[i].length;j++) {
-//				System.out.print(arr1[j][i]);
-//			}
-//			System.out.println();
-//		}
-//		
-//		for(int i=0;i<arr1[0].length;i++) {
-//			for(int j=0;j<arr1.length;j++) {
-//				System.out.print(arr1[j][i]);
-//			}
-//			System.out.println();
-//		}
-//		
+		for(int i=0;i<arr1.length;i++) {
+			for(int j=0;j<arr1[i].length;j++) {
+				System.out.print(arr1[i][j]+" ");//[j][i]6
+			}
+			System.out.println();
+		}
+		
+		for(int i=0;i<arr1[0].length;i++) {
+			for(int j=0;j<arr1.length;j++) {
+				System.out.print(arr1[j][i]+" ");
+			}
+			System.out.println();
+		}
+		
 
 	}
 
