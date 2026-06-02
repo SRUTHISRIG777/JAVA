@@ -13,7 +13,7 @@ public class Vehicle {
 		this.vehicleType = vehicleType;
 		this.vehicleNumber = vehicleNumber;
 		this.contactNumber = contactNumber;
-		System.out.println("vehilce added successfully...");
+		//System.out.println("vehilce added successfully...");
 	}
 	public int getVehicleId() {
 		return vehicleId;
